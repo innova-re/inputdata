@@ -1,0 +1,5 @@
+innovare_core:
+    resource: "@InnovareCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
