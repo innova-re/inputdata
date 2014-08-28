@@ -1,11 +1,11 @@
-Symfony Standard Edition
+Innovare Laboratori in Rete
 ========================
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new applications.
+Welcome to the Innovare Laboratori in Rete - a fully-functional Symfony2
+application.
 
 This document contains information on how to download, install, and start
-using Symfony. For a more detailed explanation, see the [Installation][1]
+using "Innovare Laboratori in Rete". For a more detailed explanation, see the [Installation][1]
 chapter of the Symfony Documentation.
 
 1) Installing the Standard Edition
