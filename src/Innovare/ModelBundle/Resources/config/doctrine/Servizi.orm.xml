@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Innovare\ModelBundle\Entity\Servizi" table="servizi">
+    <indexes>
+      <index name="FK_servizi_laboratorio1" columns="id_laboratorio"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="descrizione" type="string" column="descrizione" length="1100" nullable="false"/>
+    <field name="nome" type="string" column="nome" length="250" nullable="false"/>
+    <field name="strumentiUtilizzati" type="string" column="strumenti_utilizzati" length="250" nullable="false"/>
+    <field name="noteStrumentiUtilizzati" type="string" column="note_strumenti_utilizzati" length="250" nullable="true"/>
+    <field name="paroleChiave" type="string" column="parole_chiave" length="250" nullable="true"/>
+    <field name="note" type="string" column="note" length="250" nullable="true"/>
+    <many-to-one field="idLaboratorio" target-entity="Laboratorio">
+      <join-columns>
+        <join-column name="id_laboratorio" referenced-column-name="id_laboratorio"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

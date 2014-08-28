@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Innovare\ModelBundle\Entity\LaboratorioHasMacroarea" table="laboratorio_has_macroarea">
+    <indexes>
+      <index name="FK_laboratorio_has_macroarea_laboratoriolink1" columns="id_laboratorio"/>
+      <index name="FK_laboratorio_has_macroarea_macroarealink2" columns="id_macroarea"/>
+      <index name="FK_laboratorio_has_macroarea_ambito5" columns="id_ambito_intervento"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <many-to-one field="idMacroarea" target-entity="Macroarea">
+      <join-columns>
+        <join-column name="id_macroarea" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idLaboratorio" target-entity="Laboratorio">
+      <join-columns>
+        <join-column name="id_laboratorio" referenced-column-name="id_laboratorio"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idAmbitoIntervento" target-entity="AmbitoIntervento">
+      <join-columns>
+        <join-column name="id_ambito_intervento" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>
