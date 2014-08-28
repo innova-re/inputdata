@@ -52,4 +52,83 @@ class LaboratorioHasMacroarea
     private $idAmbitoIntervento;
 
 
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set idMacroarea
+     *
+     * @param \Innovare\ModelBundle\Entity\Macroarea $idMacroarea
+     * @return LaboratorioHasMacroarea
+     */
+    public function setIdMacroarea(\Innovare\ModelBundle\Entity\Macroarea $idMacroarea = null)
+    {
+        $this->idMacroarea = $idMacroarea;
+
+        return $this;
+    }
+
+    /**
+     * Get idMacroarea
+     *
+     * @return \Innovare\ModelBundle\Entity\Macroarea 
+     */
+    public function getIdMacroarea()
+    {
+        return $this->idMacroarea;
+    }
+
+    /**
+     * Set idLaboratorio
+     *
+     * @param \Innovare\ModelBundle\Entity\Laboratorio $idLaboratorio
+     * @return LaboratorioHasMacroarea
+     */
+    public function setIdLaboratorio(\Innovare\ModelBundle\Entity\Laboratorio $idLaboratorio = null)
+    {
+        $this->idLaboratorio = $idLaboratorio;
+
+        return $this;
+    }
+
+    /**
+     * Get idLaboratorio
+     *
+     * @return \Innovare\ModelBundle\Entity\Laboratorio 
+     */
+    public function getIdLaboratorio()
+    {
+        return $this->idLaboratorio;
+    }
+
+    /**
+     * Set idAmbitoIntervento
+     *
+     * @param \Innovare\ModelBundle\Entity\AmbitoIntervento $idAmbitoIntervento
+     * @return LaboratorioHasMacroarea
+     */
+    public function setIdAmbitoIntervento(\Innovare\ModelBundle\Entity\AmbitoIntervento $idAmbitoIntervento = null)
+    {
+        $this->idAmbitoIntervento = $idAmbitoIntervento;
+
+        return $this;
+    }
+
+    /**
+     * Get idAmbitoIntervento
+     *
+     * @return \Innovare\ModelBundle\Entity\AmbitoIntervento 
+     */
+    public function getIdAmbitoIntervento()
+    {
+        return $this->idAmbitoIntervento;
+    }
 }

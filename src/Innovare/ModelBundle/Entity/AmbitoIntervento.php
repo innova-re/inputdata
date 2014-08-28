@@ -53,4 +53,106 @@ class AmbitoIntervento
     private $idMacroarea;
 
 
+
+    /**
+     * Set nome
+     *
+     * @param string $nome
+     * @return AmbitoIntervento
+     */
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+
+        return $this;
+    }
+
+    /**
+     * Get nome
+     *
+     * @return string 
+     */
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    /**
+     * Set descrizione
+     *
+     * @param string $descrizione
+     * @return AmbitoIntervento
+     */
+    public function setDescrizione($descrizione)
+    {
+        $this->descrizione = $descrizione;
+
+        return $this;
+    }
+
+    /**
+     * Get descrizione
+     *
+     * @return string 
+     */
+    public function getDescrizione()
+    {
+        return $this->descrizione;
+    }
+
+    /**
+     * Set note
+     *
+     * @param string $note
+     * @return AmbitoIntervento
+     */
+    public function setNote($note)
+    {
+        $this->note = $note;
+
+        return $this;
+    }
+
+    /**
+     * Get note
+     *
+     * @return string 
+     */
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set idMacroarea
+     *
+     * @param \Innovare\ModelBundle\Entity\Macroarea $idMacroarea
+     * @return AmbitoIntervento
+     */
+    public function setIdMacroarea(\Innovare\ModelBundle\Entity\Macroarea $idMacroarea = null)
+    {
+        $this->idMacroarea = $idMacroarea;
+
+        return $this;
+    }
+
+    /**
+     * Get idMacroarea
+     *
+     * @return \Innovare\ModelBundle\Entity\Macroarea 
+     */
+    public function getIdMacroarea()
+    {
+        return $this->idMacroarea;
+    }
 }
