@@ -6,14 +6,24 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-class DefaultController extends Controller
+/*
+ * Class MacroareaController
+ */
+class MacroareaController extends Controller
 {
     /**
-     * @Route("/hello/{name}")
+     * Show the macroarea index
+     *
+     * @return array
+     *
+     * @Route("/")
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
-        return array('name' => $name);
+        return array(
+                // ...
+            );
     }
+
 }
