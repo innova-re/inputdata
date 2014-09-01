@@ -1,0 +1,9 @@
+{% extends "InnovareCoreBundle::layout.html.twig" %}
+
+{% block title %}{{ 'macroarea.plural' | trans }}{% endblock %}
+
+{% block section %}
+	{% for macroarea in macroareas %}
+		{{ include('InnovareCoreBundle:Macroarea:_macroarea.html.twig', {macroarea: macroarea}) }}
+	{% endfor %}
+{% endblock %}
