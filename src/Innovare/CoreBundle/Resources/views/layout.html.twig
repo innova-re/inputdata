@@ -1,0 +1,26 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('bundle/core/css/main.css') }}">
+{% endblock %}
+
+{% block body %}
+	<header>
+		<p>Innovare - Laboratori in Rete</p>
+		<nav>
+			<ul>
+				<li><a href="#">{{ 'home' | trans }}</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	{% block sidebar %}{% endblock %}
+
+	<section>
+		{% block section %}{% endblock %}
+	</section>
+
+	<footer>
+		<p>&copy;{{ 'now' | date('Y') }} Innovare - Laboratori in Rete</p>
+	</footer>
+{% endblock %}
