@@ -3,5 +3,7 @@
 {% block title %}{{ 'macroarea.plural' | trans }}{% endblock %}
 
 {% block section %}
-<h1>Welcome to the Macroarea:index page</h1>
+	{% for macroarea in macroareas %}
+		{{ include('InnovareCoreBundle:Macroarea:_macroarea.html.twig', {macroarea: macroarea}) }}
+	{% endfor %}
 {% endblock %}

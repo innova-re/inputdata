@@ -19,6 +19,8 @@ class MacroareaControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/');
 
         $this->assertTrue($client->getResponse()->isSuccessful(), 'The response was not successful');
+
+    	$this->assertCount(1, $crawler->filter('h2'), 'There should be 1 displayed macroarea');
     }
 
 }

@@ -21,8 +21,9 @@ class MacroareaController extends Controller
      */
     public function indexAction()
     {
+        $macroareas = $this->getDoctrine()->getRepository('InnovareModelBundle:Macroarea')->findAll();
         return array(
-                // ...
+                 'macroareas' => $macroareas
             );
     }
 
