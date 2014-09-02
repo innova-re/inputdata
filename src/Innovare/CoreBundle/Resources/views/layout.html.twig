@@ -1,17 +1,19 @@
 {% extends "::base.html.twig" %}
 
 {% block stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ asset('bundle/core/css/main.css') }}">
+	<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="{{ asset('bundles/innovarecore/css/main.css') }}">
 {% endblock %}
 
 {% block body %}
-	<header>
-		<p>Innovare - Laboratori in Rete</p>
-		<nav>
-			<ul>
+	<header class="navbar navbar-default">
+		<a href="#" class="navbar-brand">Innovare - Laboratori in Rete</a>
+		<div class="container">
+			<ul class="navbar-nav nav">
 				<li><a href="#">{{ 'home' | trans }}</a></li>
+				<li><a href="#">{{ 'macroarea' | trans }}</a></li>
 			</ul>
-		</nav>
+		</div>
 	</header>
 
 	{% block sidebar %}{% endblock %}
