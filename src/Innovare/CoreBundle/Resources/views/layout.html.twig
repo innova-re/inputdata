@@ -1,26 +1,32 @@
 {% extends "::base.html.twig" %}
 
 {% block stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ asset('bundle/core/css/main.css') }}">
+	<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="{{ asset('bundles/innovarecore/css/main.css') }}">
 {% endblock %}
 
 {% block body %}
-	<header>
-		<p>Innovare - Laboratori in Rete</p>
-		<nav>
-			<ul>
-				<li><a href="#">{{ 'home' | trans }}</a></li>
-			</ul>
+	<header class="navbar navbar-default navbar-fixed-top">
+		<nav class="container">
+			<a href="#" class="navbar-brand">Innovare - Laboratori in Rete</a>
+
+				<ul class="navbar-nav nav">
+					<li><a href="#">{{ 'home' | trans }}</a></li>
+				</ul>
 		</nav>
 	</header>
 
 	{% block sidebar %}{% endblock %}
 
-	<section>
+	<div class="container">
 		{% block section %}{% endblock %}
-	</section>
+	</div>
 
-	<footer>
-		<p>&copy;{{ 'now' | date('Y') }} Innovare - Laboratori in Rete</p>
+	<footer class="container">
+	    <div class="row">
+	        <div class="col-lg-12">
+	            <p>&copy;{{ 'now' | date('Y') }} Innovare - Laboratori in Rete</p>
+	        </div>
+	    </div>
 	</footer>
 {% endblock %}

@@ -1,18 +1,3 @@
-html {
-	min-height: 100%;
-	position: relative;
-}
-
 body {
-	margin: 0 0 80px;
-}
-
-header {
-	background-color: #c3c3c3;
-	padding: 10px;
-}
-
-header p {
-	font-size: 28px;
-	margin: 5px;
+	padding-top: 70px;
 }
