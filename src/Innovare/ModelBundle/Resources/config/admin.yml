@@ -1,0 +1,12 @@
+# Innovare/ModelBundle/Resources/config/admin.yml
+services:
+    sonata.admin.post:
+        class: Innovare\ModelBundle\Admin\MacroareaAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Macroarea" }
+        arguments:
+            - ~
+            - Innovare\ModelBundle\Entity\Macroarea
+            - ~
+        calls:
+            - [ setTranslationDomain, [InnovareModelBundle]]
