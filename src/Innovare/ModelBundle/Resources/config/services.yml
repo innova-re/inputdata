@@ -1,0 +1,6 @@
+services:
+    innovare_model.admin.macroarea:
+        class: Innovare\ModelBundle\Admin\MacroareaAdmin
+        arguments: [~, Innovare\ModelBundle\Entity\Macroarea, InnovareModelBundle:MacroareaAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Macroarea}
