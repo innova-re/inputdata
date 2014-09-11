@@ -1,3 +1,8 @@
+innovare_user:
+    resource: "@InnovareUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 innovare_core:
     resource: "@InnovareCoreBundle/Controller/"
     type:     annotation
@@ -11,3 +16,6 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
+
+_user_bundles:
+    resource: '@InnovareUserBundle/Resources/config/routing.yml'
