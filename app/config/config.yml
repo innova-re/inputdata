@@ -86,3 +86,9 @@ sonata_block:
 sonata_admin:
     title:      Laboratori in Rete
     title_logo: bundles/innovarecore/images/logo.png
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: Innovare\UserBundle\Entity\User
+
